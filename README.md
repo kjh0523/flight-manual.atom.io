@@ -21,9 +21,9 @@ To check the current progress and planned content of the book, check out the [ou
 
 ### 전제조건
 
-* You'll need [Ruby installed on your system](https://www.ruby-lang.org/en/documentation/installation/). The required version can be found in [`.ruby-version`](.ruby-version).
-* You'll need the bundler Ruby Gem installed. You can do this with `gem install bundler`.
-* You'll need [Node installed](https://nodejs.org/en/download/), too. The required version can be found in [`package.json`](package.json).
+* 당신의 시스템에 [Ruby](https://www.ruby-lang.org/en/documentation/installation/)가 설치 되어 있어야 합니다. 필요한 버전은 [`.ruby-version`](.ruby-version)에서 확인 할 수 있습니다.
+* Ruby Gem이 설치 되어 있어야 합니다. `gem install bundler` 명령어로 확인 할 수 있습니다. 
+* [Node](https://nodejs.org/en/download/) 역시 설치 되어 있어야 합니다. 필요한 버전은 [`package.json`](package.json)에서 확인 할 수 있습니다. .
 
 ### 의존성 해결하기
 
