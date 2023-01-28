@@ -3,11 +3,11 @@
 
 이것은 Atom 책입니다. Everything you need to know in order to use and hack Atom is in this Flight Manual.
 
-You can find this book online at: https://flight-manual.atom.io
+당신은 https://flight-manual.atom.io 에서 이책을 찾을 수 있습니다. 
 
-This book is open source under a Creative Commons license.
+이 책은 크리에이티브 커먼즈 라이센스를 따릅니다. 
 
-[![atom-cover](https://cloud.githubusercontent.com/assets/378023/8718108/54c10686-2bdc-11e5-8d26-f7f807d63171.png)](https://github.com/atom/docs/releases/latest)
+[![atom-표지](https://cloud.githubusercontent.com/assets/378023/8718108/54c10686-2bdc-11e5-8d26-f7f807d63171.png)](https://github.com/atom/docs/releases/latest)
 
 ## 라이센스
 
