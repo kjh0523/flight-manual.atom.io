@@ -1,15 +1,15 @@
 ---
-title: Hacking on Atom Core
+title: Atom 코어 해킹하기 / Hacking on Atom Core
 ---
-### Hacking on Atom Core
+### Atom 코어 해킹하기 / Hacking on Atom Core
 
 If you're hitting a bug in Atom or just want to experiment with adding a feature to the core of the system, you'll want to run Atom in Dev Mode with access to a local copy of the Atom source.
 
-#### Fork the atom/atom repository
+#### atom/atom 레포지토리 포크하기 / Fork the atom/atom repository
 
 Follow the [GitHub Help instructions on how to fork a repo](https://help.github.com/articles/fork-a-repo/).
 
-#### Cloning and bootstrapping
+#### 복제와 부트스트래핑 Cloning and bootstrapping
 
 Once you've set up your fork of the atom/atom repository, you can clone it to your local machine:
 
@@ -46,7 +46,7 @@ $ script\bootstrap
 
 {{/windows}}
 
-#### Running in Development Mode
+#### 개발 모드로 실행하기
 
 Once you have a local copy of Atom cloned and bootstrapped, you can then run Atom in Development Mode. But first, if you cloned Atom to somewhere other than <span class="platform-mac platform-linux">`~/github/atom`</span><span class="platform-windows">`%USERPROFILE%\github\atom`</span> you will need to set the `ATOM_DEV_RESOURCE_PATH` environment variable to point to the folder in which you cloned Atom. To run Atom in Dev Mode, use the `--dev` parameter from the terminal:
 
@@ -65,7 +65,7 @@ There are a couple benefits of running Atom in Dev Mode:
 1. Packages that exist in <span class="platform-mac platform-linux">`~/.atom/dev/packages`</span><span class="platform-windows">`%USERPROFILE%\.atom\dev\packages`</span> are loaded instead of packages of the same name normally loaded from other locations. This means that you can have development versions of packages you use loaded but easily go back to the stable versions by launching without Dev Mode.
 1. Packages that contain stylesheets, such as syntax themes, will have those stylesheets automatically reloaded by the [dev-live-reload](https://github.com/atom/dev-live-reload) package. This does not live reload JavaScript or CoffeeScript files — you'll need to reload the window (`window:reload`) to see changes to those.
 
-#### Running Atom Core Tests Locally
+#### 로컬에서 Atom 코어 실험하기
 
 In order to run Atom Core tests from the terminal, first be certain to set the `ATOM_DEV_RESOURCE_PATH` environment variable as mentioned above and then:
 
@@ -74,13 +74,13 @@ $ cd <em>path-to-your-local-atom-repo</em>
 $ atom --test spec
 ```
 
-#### Building
+#### 컴파일하기
 
 In order to build Atom from source, you need to have a number of other requirements and take additional steps.
 
 {{#mac}}
 
-##### Requirements
+##### 필요한 것들
 
 * macOS 10.9 or later
 * Node.js 10.12 or later (we recommend installing it via [nvm](https://github.com/creationix/nvm))
@@ -119,7 +119,7 @@ In order to build Atom from source, you need to have a number of other requireme
 
 Ubuntu LTS 16.04 64-bit is the recommended platform.
 
-##### Requirements
+##### 필요한 것들
 
 * OS with 64-bit or 32-bit architecture
 * C++11 toolchain
@@ -131,7 +131,7 @@ Ubuntu LTS 16.04 64-bit is the recommended platform.
 
 For more details, scroll down to find how to setup a specific Linux distro.
 
-###### Ubuntu / Debian
+###### 우분투 Ubuntu / 데비안 Debian
 
 * Install GNOME headers and other basic prerequisites:
 
@@ -149,31 +149,31 @@ For more details, scroll down to find how to setup a specific Linux distro.
   $ sudo update-alternatives --config gcc # choose gcc-5 from the list
   ```
 
-###### Fedora 22+
+###### 페도라 Fedora 22+
 
 ``` command-line
 $ sudo dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rpmdevtools libX11-devel libxkbfile-devel
 ```
 
-###### Fedora 21 / CentOS / RHEL
+###### 페도라 Fedora 21 / CentOS / RHEL
 
 ``` command-line
 $ sudo yum install -y make gcc gcc-c++ glibc-devel git-core libsecret-devel rpmdevtools
 ```
 
-###### Arch
+###### 아키 Arch
 
 ``` command-line
 sudo pacman -S --needed gconf base-devel git nodejs npm libsecret python libx11 libxkbfile
 ```
 
-###### Slackware
+###### 슬랙웨어 Slackware
 
 ``` command-line
 $ sbopkg -k -i node -i atom
 ```
 
-###### openSUSE
+###### 오픈수세 openSUSE
 
 ``` command-line
 $ sudo zypper install nodejs nodejs-devel make gcc gcc-c++ glibc-devel git-core libsecret-devel rpmdevtools libX11-devel libxkbfile-devel
@@ -181,7 +181,7 @@ $ sudo zypper install nodejs nodejs-devel make gcc gcc-c++ glibc-devel git-core 
 
 {{/linux}}
 
-##### Instructions
+##### 지침
 
 {{#mac}}
 
@@ -225,7 +225,7 @@ To also install the newly built application, use the `--create-debian-package` o
 
 {{#windows}}
 
-##### `script\build` Options
+##### `script\build` 옵션들
 
 * `--code-sign`: signs the application with the GitHub certificate specified in `$WIN_P12KEY_URL`.
 * `--compress-artifacts`: zips the generated application as `out\atom-windows.zip`.
@@ -236,7 +236,7 @@ To also install the newly built application, use the `--create-debian-package` o
 
 {{#linux}}
 
-##### `script/build` Options
+##### `script/build` 옵션들
 
 * `--compress-artifacts`: zips the generated application as `out/atom-{arch}.tar.gz`.
 * `--create-debian-package`: creates a .deb package as `out/atom-{arch}.deb`
@@ -245,7 +245,7 @@ To also install the newly built application, use the `--create-debian-package` o
 
 {{/linux}}
 
-##### Troubleshooting
+##### 문제해결
 
 {{#mac}}
 
@@ -255,7 +255,7 @@ Use [this search](https://github.com/atom/atom/search?q=label%3Abuild-error+labe
 
 {{#windows}}
 
-###### Common Errors
+###### 일반적인 오류들
 
 * `node is not recognized`
   * If you just installed Node.js, you'll need to restart Command Prompt before the `node` command is available on your path.
@@ -289,7 +289,7 @@ Use [this search](https://github.com/atom/atom/search?q=label%3Abuild-error+labe
 * Other `node-gyp` errors on first build attempt, even though the right Node.js and Python versions are installed.
   * Do try the build command one more time as experience shows it often works on second try in many cases.
 
-###### Windows build error reports
+###### 윈도우즈상의  오류들
 
 * If all else fails, use [this search](https://github.com/atom/atom/search?q=label%3Abuild-error+label%3Awindows&type=Issues) to get a list of reports about build errors on Windows, and see if yours has already been reported.
 * If it hasn't, please open a new issue with your Windows version, architecture (x86 or x64), and a text dump of your build output, including the Node.js and Python versions.
@@ -349,7 +349,7 @@ On Fedora you would do the following:
 $ sudo yum remove gyp
 ```
 
-###### Linux build error reports
+###### 리눅스 컴파일 오류들
 
 Use [this search](https://github.com/atom/atom/search?q=label%3Abuild-error+label%3Alinux&type=Issues)
 to get a list of reports about build errors on Linux.
