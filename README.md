@@ -48,6 +48,6 @@ Site compiled in 5.81s.
 
 While the server is running, you can see the site in your browser at http://localhost:4000.
 
-## Contributing
+## 기여하기
 
 If you'd like to help out by making a change, adding content or improving something, take a look at the [contributor's guide](CONTRIBUTING.md).
