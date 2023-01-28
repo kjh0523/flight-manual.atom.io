@@ -1,7 +1,7 @@
 ##### Atom and all repositories under Atom will be archived on December 15, 2022. Learn more in our [official announcement](https://github.blog/2022-06-08-sunsetting-atom/)
  # Atom 비행 매뉴얼
 
-이것은 Atom 책입니다. Everything you need to know in order to use and hack Atom is in this Flight Manual.
+이것은 Atom 책입니다. 당신이 Atom을 사용하고, 해킹하기 위해서 알아야 하는 모든 것이 이 비행 매뉴얼에 있습니다. 
 
 당신은 https://flight-manual.atom.io 에서 이책을 찾을 수 있습니다. 
 
@@ -11,7 +11,7 @@
 
 ## 라이센스
 
-This book is published under the Creative Commons BY-SA license. If you contribute to the work, you will have to agree to allow your content to be published under the self same license. Check out [the license file](LICENSE.md) for more details.
+이 책은 크리에이트 커먼즈 BY-SA  라이센스로 출간 되었습니다. 만약 당신이 이 일에 기여 하려면, 당신은 당신의 콘텐츠가 동일한 라이센스아래에서 출간 되는 것이 허락되는것을 동의해야 합니다. 상세한 내용은 [라이센스 파일](LICENSE.md)에서 확인해 보십시오.
 
 ## 현재 단계
 
@@ -50,4 +50,4 @@ Site compiled in 5.81s.
 
 ## 기여하기
 
-If you'd like to help out by making a change, adding content or improving something, take a look at the [contributor's guide](CONTRIBUTING.md).
+당신이 변경을 만들거나, 콘텐츠를 추가하거나, 뭔가를 발전시기키를 원한다면,  [기여자 가이드](CONTRIBUTING.md)를 확인해 주십시오. 
