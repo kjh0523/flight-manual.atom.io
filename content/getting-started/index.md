@@ -1,6 +1,6 @@
 ---
-title: Getting Started
+title: 시작하기
 ---
-## Getting Started
+## 시작하기
 
-This chapter is about getting started with Atom.
+이 장은 Atom과 함께 시작 하는 법을 알려 드립니다. 
