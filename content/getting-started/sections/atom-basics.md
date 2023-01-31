@@ -1,7 +1,7 @@
 ---
-title: Atom Basics
+title: 아톰 기본
 ---
-### Atom Basics
+### 아톰 기본들
 
 Now that Atom is installed on your system, let's fire it up, configure it and get acquainted with the editor.
 
@@ -11,11 +11,11 @@ When you launch Atom for the first time, you should get a screen that looks like
 
 This is the Atom welcome screen and gives you a pretty good starting point for how to get started with the editor.
 
-#### Terminology
+#### 술어 / Terminology
 
 You can find definitions for all of the various terms that we use throughout the manual in our [Glossary](/resources/sections/glossary/).
 
-#### Command Palette
+#### 명령어 팔레트
 
 In that welcome screen, we are introduced to probably the most important command in Atom, the Command Palette. If you press <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P</kbd> while focused in an editor pane, the command palette will pop up.
 
@@ -41,7 +41,7 @@ Not only can you see and quickly search through thousands of possible commands, 
 
 For the rest of the book, we will try to be clear as to the text you can search for in the Command Palette in addition to the keybinding for different commands.
 
-#### Settings and Preferences
+#### 설정
 
 Atom has a number of settings and preferences you can modify in the Settings View.
 
@@ -55,7 +55,7 @@ To open the Settings View, you can:
 * Search for `settings-view:open` in the [Command Palette](#command-palette)
 * Use the <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd> keybinding
 
-##### Changing the Theme
+##### 테마 변경하기
 
 The Settings View also lets you change the themes for Atom. Atom ships with 4 different UI themes, dark and light variants of the Atom and One theme, as well as 8 different syntax themes. You can modify the active theme by clicking on the Themes tab in the sidebar of the Settings View, or you can install new themes by clicking the Install tab.
 
@@ -77,7 +77,7 @@ The "Soft Wrap" option will wrap lines that are too long to fit in your current 
 
 In [Basic Customization](/using-atom/sections/basic-customization/) we will see how to set different wrap preferences for different types of files (for example, if you want to wrap Markdown files but not other files).
 
-#### Opening, Modifying, and Saving Files
+#### 파일을 열고, 수정하고, 저장하기
 
 Now that your editor is looking and acting how you want, let's start opening up and editing files. This is a text editor after all, right?
 
@@ -129,13 +129,13 @@ content/getting-started/sections/atom-basics.md:150:722
 $ atom content/getting-started/sections/atom-basics.md:150:722
 ```
 
-##### Editing and Saving a File
+##### 파일을 편집하고 저장하기
 
 Editing a file is pretty straightforward. You can click around and scroll with your mouse and type to change the content. There is no special editing mode or key commands. If you prefer editors with modes or more complex key commands, you should take a look at the [Atom package list](https://atom.io/packages). There are a lot of packages that emulate popular styles.
 
 To save a file you can choose *File > Save* from the menu bar or <kbd class="platform-mac">Cmd+S</kbd><kbd class="platform-windows platform-linux">Ctrl+S</kbd> to save the file. If you choose *File > Save As* or press <kbd class="platform-mac">Cmd+Shift+S</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+S</kbd> then you can save the current content in your editor under a different file name. Finally, you can choose *File > Save All* <span class="platform-mac">or press <kbd class="platform-mac">Alt+Cmd+S</kbd></span> to save all the open files in Atom.
 
-#### Opening Directories
+#### 디렉토리 열기
 
 Atom doesn't just work with single files though; you will most likely spend most of your time working on projects with multiple files. To open a directory, choose the menu item <span class="platform-mac">*File > Open*</span><span class="platform-windows platform-linux">*File > Open Folder*</span> and select a directory from the dialog. You can also add more than one directory to your current Atom window, by choosing *File > Add Project Folder* from the menu bar or pressing <kbd class="platform-mac">Cmd+Shift+O</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+A</kbd>.
 
