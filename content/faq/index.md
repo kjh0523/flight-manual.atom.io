@@ -1,6 +1,6 @@
 ---
-title: FAQ
+title: 자주 묻는 질문 답변
 ---
-## FAQ
+## 자주 묻는 질문 답변
 
-The collection of Frequently Asked Questions about Atom.
+Atom에 관한 자주 묻는 질문 답변 모음.
